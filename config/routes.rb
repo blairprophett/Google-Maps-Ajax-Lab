@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
   root to: 'pins#index'
-  
+
+  post '/pins', to: 'pins#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
