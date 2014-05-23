@@ -10,23 +10,22 @@ function initialize() {
 
 //AJAX GET
   
-  var addPin = function(lat, long) {
+  // var addPin = function(lat, long) {
 
-    var loc = new google.maps.LatLng(28.333, -21.572);
-    // var loc = new google.maps.LatLng(lat, long);
+  var loc = new google.maps.LatLng(28.333, -21.572);
+  // var loc = new google.maps.LatLng(lat, long);
   
-      var newMarker = new google.maps.Marker({
-        position: loc,
-        map: map
-          });
-      };
+  var newMarker = new google.maps.Marker({
+    position: loc,
+    map: map
+    });
 
 //AJAX POST
 
     // google.maps.event.addListener(map, 'click', function(event) {
     //   $.ajax ({
     //     type: 'POST',
-    //     url: '/pins',
+    //     url: '/',
     //     data: { lat: ,long: }
     //   })
     

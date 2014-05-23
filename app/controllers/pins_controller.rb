@@ -10,13 +10,14 @@ class PinsController < ApplicationController
   end
 
   def create
-    @pin = Pin.create(pin_params)
+    @pin = Pin.new(pin_params)
+    
+    respond_to do |f|
       if @pin.save
-        respond_to do |f|
-          f.json {render :json => @pin, :status => :created }
-        end
+        f.json {render json: @pin, status: :created}
       else
-        f.json {render :json => @pin.errors, :status => :unprocessable_entity }
+        f.json {render json: @pin.errors, :status => :unprocessable_entity }
+      end
     end
   end
 

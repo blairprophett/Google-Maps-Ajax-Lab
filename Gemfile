@@ -30,6 +30,8 @@ gem 'quiet_assets', group: :development
 
 gem 'dotenv-rails', group: :development
 
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
