@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+var loc = new google.maps.LatLng(28.333, -21.572);
+var newMarker = new google.maps.Marker({
+  position: loc,
+  map: map
+});
