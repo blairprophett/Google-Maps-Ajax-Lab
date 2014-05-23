@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
   devise_for :users
+
   root to: 'pins#index'
 
+  get '/pins', to: 'pins#index'
   post '/pins', to: 'pins#create'
 
   # The priority is based upon order of creation: first created -> highest priority.

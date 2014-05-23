@@ -7,3 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Pin.create(lat: 37.7833, long: 122.4167)
+Pin.create(lat: 42.3736, long: -71.1106)
+Pin.create(lat: 49.8994, long: -97.1392)
